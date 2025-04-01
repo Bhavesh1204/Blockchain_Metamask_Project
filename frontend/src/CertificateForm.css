@@ -1,0 +1,124 @@
+/* 🌙 Dark Mode Full-Screen UI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* 🏠 Main Container */
+.certification {
+  background-color: #111;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* 🎓 Headings */
+h2, h3 {
+  color: #ffcc00; /* Yellow */
+  margin-bottom: 15px;
+}
+
+/* 🔲 Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 🔘 Buttons */
+button {
+  background-color: #ffcc00; /* Yellow */
+  color: black;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff9900; /* Darker Yellow */
+}
+
+/* ✅ Verification Result */
+.verification-result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ⚠️ Revoked Certificates */
+.revoked {
+  color: red;
+  font-weight: bold;
+}
+
+/* 📜 Issued Certificates */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 🆕 Hash Value Styling */
+.hash {
+  background: #222;
+  color: #00ffcc; /* Light Cyan for better visibility */
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  word-break: break-all; /* Ensures long hashes wrap properly */
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 100%;
+  overflow-x: auto; /* Allows scrolling if hash is too long */
+  white-space: pre-wrap;
+}
+
+/* 🖥️ Responsive Design */
+@media (max-width: 768px) { /* Tablets */
+  .certification {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+  .certification {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .hash {
+    font-size: 12px;
+  }
+}

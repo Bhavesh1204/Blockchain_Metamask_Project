@@ -1,0 +1,17 @@
+/* Center the whole page */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the screen */
+  text-align: center;
+  background: #f4f4f4; /* Light gray background */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
